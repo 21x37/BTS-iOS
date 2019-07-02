@@ -1,5 +1,5 @@
 //
-//  StartGameViewController.swift
+//  GameOverViewController.swift
 //  BTS-iOS
 //
 //  Created by Tyler Mok on 6/5/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StartGameViewController: UIViewController {
+class GameOverViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,10 +16,7 @@ class StartGameViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func startGameBackButtonPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil);
-    }
-    
+
     /*
     // MARK: - Navigation
 

@@ -14,6 +14,8 @@
 		E4E42C4C22A86FA400630761 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4E42C4A22A86FA400630761 /* LaunchScreen.storyboard */; };
 		E4E42C5422A874EF00630761 /* StartGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E42C5322A874EF00630761 /* StartGameViewController.swift */; };
 		E4E42C5622A8753100630761 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E42C5522A8753100630761 /* OptionsViewController.swift */; };
+		E4E42C5C22A8811500630761 /* GamePieceDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E42C5B22A8811500630761 /* GamePieceDataModel.swift */; };
+		E4E42C5E22A88E1B00630761 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E42C5D22A88E1B00630761 /* GameOverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		E4E42C4D22A86FA400630761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4E42C5322A874EF00630761 /* StartGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameViewController.swift; sourceTree = "<group>"; };
 		E4E42C5522A8753100630761 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		E4E42C5B22A8811500630761 /* GamePieceDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePieceDataModel.swift; sourceTree = "<group>"; };
+		E4E42C5D22A88E1B00630761 /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,50 @@
 		E4E42C4022A86FA300630761 /* BTS-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E4E42C5A22A878ED00630761 /* Supporting Files */,
+				E4E42C5922A878AB00630761 /* View */,
+				E4E42C5822A8789F00630761 /* Controller */,
+				E4E42C5722A8788C00630761 /* Model */,
+				E4E42C4822A86FA400630761 /* Assets.xcassets */,
+			);
+			path = "BTS-iOS";
+			sourceTree = "<group>";
+		};
+		E4E42C5722A8788C00630761 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4E42C5B22A8811500630761 /* GamePieceDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4E42C5822A8789F00630761 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				E4E42C4122A86FA300630761 /* AppDelegate.swift */,
 				E4E42C4322A86FA300630761 /* ViewController.swift */,
 				E4E42C5322A874EF00630761 /* StartGameViewController.swift */,
 				E4E42C5522A8753100630761 /* OptionsViewController.swift */,
-				E4E42C4522A86FA300630761 /* Main.storyboard */,
-				E4E42C4822A86FA400630761 /* Assets.xcassets */,
+				E4E42C5D22A88E1B00630761 /* GameOverViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E4E42C5922A878AB00630761 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				E4E42C4A22A86FA400630761 /* LaunchScreen.storyboard */,
+				E4E42C4522A86FA300630761 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4E42C5A22A878ED00630761 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				E4E42C4D22A86FA400630761 /* Info.plist */,
 			);
-			path = "BTS-iOS";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4E42C5C22A8811500630761 /* GamePieceDataModel.swift in Sources */,
 				E4E42C4422A86FA300630761 /* ViewController.swift in Sources */,
+				E4E42C5E22A88E1B00630761 /* GameOverViewController.swift in Sources */,
 				E4E42C5622A8753100630761 /* OptionsViewController.swift in Sources */,
 				E4E42C4222A86FA300630761 /* AppDelegate.swift in Sources */,
 				E4E42C5422A874EF00630761 /* StartGameViewController.swift in Sources */,
@@ -291,7 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "BTS-iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/BTS-iOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "BTS-iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/BTS-iOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
